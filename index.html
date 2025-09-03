@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiya Qasmi - Computer Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 5px 5px 0 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .project {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #333;
+        }
+        .contact-info {
+            background-color: #e9e9e9;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .award {
+            background-color: #fff3cd;
+            padding: 10px;
+            margin: 5px 0;
+            border-left: 3px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('research')">Research</a></li>
+                <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Section -->
+        <div id="home" class="section active">
+            <h1>Welcome</h1>
+            <p>I'm Samiya Qasmi, a Computer Engineering Master's student at Purdue University Fort Wayne with research experience in IoT, machine learning, and embedded systems.</p>
+            <p><strong>Current Focus:</strong> Federated Learning on IoT devices, PCB design, and embedded systems development.</p>
+            <p><strong>Research Interests:</strong> Computer Vision, Biomedical Instrumentation, Machine Learning, Digital Signal Processing</p>
+            
+            <div class="award">
+                <strong>Recent Recognition:</strong> ETCS Dean's Choice Award for 28th Annual Research and Creative Endeavors Symposium
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section">
+            <h1>About Me</h1>
+            <h3>Education</h3>
+            <p><strong>Master of Science in Engineering, Computer Engineering</strong> - GPA: 3.50/4.00 (Expected Dec 2026)<br>
+            Purdue University Fort Wayne, Fort Wayne, IN</p>
+            <p><strong>Bachelor of Science, Computer Engineering (Honors)</strong> - GPA: 3.57/4.00 (May 2025)<br>
+            Purdue University Fort Wayne, Fort Wayne, IN<br>
+            Minors: Computer Science, Mathematics</p>
+
+            <h3>Technical Skills</h3>
+            <p><strong>Programming:</strong> Python, C++, Java, TypeScript<br>
+            <strong>Tools & Platforms:</strong> KiCAD, Arduino IDE, Qt Creator, MATLAB, Excel, Power Automate<br>
+            <strong>Hardware:</strong> ARM Cortex-M4, ESP32, Arduino, Raspberry Pi, PCB Design<br>
+            <strong>Communication:</strong> CAN protocol, IoT protocols</p>
+
+            <h3>Awards & Honors</h3>
+            <ul>
+                <li>ETCS Dean's Choice Award (2025)</li>
+                <li>Top 50 Student Recognition</li>
+                <li>Dean's and Semester's Honors List</li>
+                <li>Honors Pin for completing 18 credit hours of honors coursework</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section">
+            <h1>Technical Projects</h1>
+            
+            <div class="project">
+                <h3>Federated Learning on Resource-Constrained IoT Devices</h3>
+                <p>Implemented federated learning across ESP32 and Arduino devices to predict rain patterns using temperature and humidity data. Developed Raspberry Pi 5 central server with federated averaging algorithm.</p>
+                <p><strong>Technologies:</strong> Python, ESP32, Arduino, Raspberry Pi, Machine Learning</p>
+            </div>
+
+            <div class="project">
+                <h3>Autonomous Low-Profile Vessel (Senior Design)</h3>
+                <p>Developed automated vessel for AI Maritime Maneuver Indiana Collegiate Challenge (Naval Surface Warfare Center Crane Division). Designed custom PCB integrating ARM Cortex-M4 and Nvidia Jetson.</p>
+                <p><strong>Technologies:</strong> ARM Cortex-M4, Nvidia Jetson, CAN communication, PCB design</p>
+            </div>
+
+            <div class="project">
+                <h3>Drag and Drop Logic Game Simulator</h3>
+                <p>Developing logic simulator in Qt Creator using Python for first-year engineering students to understand boolean algebra and digital logic concepts through interactive visualization.</p>
+                <p><strong>Technologies:</strong> Qt Creator, Python, GUI Development</p>
+            </div>
+
+            <div class="project">
+                <h3>CREATE Platform Development</h3>
+                <p>Developed Cyber-Physical Learning Environment for first-year engineering program. Cross-platform GUI using Python that mirrors physical PCB in software application.</p>
+                <p><strong>Technologies:</strong> Qt Creator, Python, Cross-platform development</p>
+            </div>
+
+            <div class="project">
+                <h3>Portable Experimenter Engineering Board (PEEB)</h3>
+                <p>Developed complete engineering kit for First Year Engineering students, including PCB design, soldering, and pedagogical implementation with story-based approach.</p>
+                <p><strong>Technologies:</strong> KiCAD, Arduino IDE, PCB Design, Educational Technology</p>
+            </div>
+        </div>
+
+        <!-- Research Section -->
+        <div id="research" class="section">
+            <h1>Research & Publications</h1>
+            
+            <h3>Current Research</h3>
+            <div class="project">
+                <h4>Federated Learning for IoT Devices (Master's Thesis)</h4>
+                <p>May 2025 – Present | Purdue University Fort Wayne</p>
+                <p>Researching federated learning implementations on resource-constrained IoT devices with focus on privacy-preserving machine learning algorithms.</p>
+            </div>
+
+            <h3>Publications</h3>
+            <div class="project">
+                <h4>EDUNINE 2025 Conference</h4>
+                <p>S. Qasmi and C. de Freitas, "Work in Progress: Development of a Modular and Integrated Electronic Kit for First-Year Engineering," 2025 IEEE Engineering Education World Conference (EDUNINE), Montevideo, Uruguay, 2025.</p>
+            </div>
+
+            <h3>Conference Presentations</h3>
+            <ul>
+                <li><strong>28th Annual Student Research Symposium (2025):</strong> "Using Federated Learning on Resource-Constrained IoT Devices" & "Transforming Physical Lab Kits into a Virtual Platform"</li>
+                <li><strong>27th Annual Student Research Symposium (2024):</strong> "Enhancing the learning experience of first-year engineering students through portable engineering kit"</li>
+            </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="section">
+            <h1>Professional Experience</h1>
+            
+            <div class="project">
+                <h3>Graduate Teaching Assistant</h3>
+                <p><strong>Purdue University Fort Wayne</strong> | Aug 2025 – Present</p>
+                <p>Instructed Digital Systems Design lab, assisting 20+ students in developing foundational digital logic concepts in laboratory environment.</p>
+            </div>
+
+            <div class="project">
+                <h3>Customer Support Engineering Intern</h3>
+                <p><strong>ASML, Austin, TX</strong> | May 2024 – Aug 2024</p>
+                <p>Led Excel and Power Automate automation solution integrated with database. Developed TypeScript-based Office scripts and automated daily status reports. Contributed to predictive maintenance project for DUV lithography systems.</p>
+            </div>
+
+            <div class="project">
+                <h3>Senior Student Technician</h3>
+                <p><strong>Purdue ITS</strong> | May 2023 – May 2025</p>
+                <p>Developed training methods for new employees and provided training to 12+ new employees. Created training packets and documentation for IT support processes.</p>
+            </div>
+
+            <h3>Leadership Experience</h3>
+            <ul>
+                <li><strong>Dean's Ambassador</strong> - Represented engineering department at outreach events</li>
+                <li><strong>Society of Women Engineers VP</strong> - Organized STEM outreach programs</li>
+                <li><strong>International Student Orientation Leader</strong> - Helped 300+ international students</li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h1>Contact Information</h1>
+            <div class="contact-info">
+                <p><strong>Email:</strong> qasmisamiya@gmail.com</p>
+                <p><strong>Phone:</strong> (260) 498-3955</p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/samiya-qasmi" target="_blank">linkedin.com/in/samiya-qasmi</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/Samiya104" target="_blank">github.com/Samiya104</a></p>
+                <p><strong>Location:</strong> Fort Wayne, IN</p>
+            </div>
+            
+            <h3>Current Status</h3>
+            <p>Seeking internship opportunities to apply technical skills in Python, C++, and PCB design to solve industry-specific engineering challenges.</p>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionName) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active');
+            }
+            
+            // Show selected section
+            document.getElementById(sectionName).classList.add('active');
+        }
+    </script>
+</body>
+</html>
